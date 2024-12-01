@@ -11,7 +11,7 @@
 <body>
     <header class="hero">
         <nav class="navbar">
-            <div class="logo">CarPicsByAI.net</div>
+            <a class="logo" href="{{  url_for('home')  }}">CarPicsByAI.net</a>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">How It Works</a></li>
@@ -23,7 +23,7 @@
             <div class="hero-content">
                 <h1>Make Your Car Photos Stand Out</h1>
                 <p>Upload your car photos, and our AI will enhance them with stunning backgrounds, perfect lighting, and vibrant colors to attract buyers.</p>
-                <button class="cta-button">Get Started</button>
+                <a class="cta-button" href="{{  url_for('get_started')  }}">Get Started</a>
             </div>
         </div>
     </header>
