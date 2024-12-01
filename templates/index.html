@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Enhance your car photos with CarPicsByAI.net. Upload your car image, and let AI change the background, adjust lighting, and improve color for a perfect shot.">
     <title>CarPicsByAI.net</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,26 +18,32 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero-content">
-            <h1>Make Your Car Photos Stand Out</h1>
-            <p>Upload your car photos, and our AI will enhance them with stunning backgrounds, perfect lighting, and vibrant colors to attract buyers.</p>
-            <button class="cta-button">Get Started</button>
+        <div class="hero-image-container">
+            <img src="{{url_for('static', filename='imgs/car.png')}}" alt="Cars in a scenic background" class="hero-image">
+            <div class="hero-content">
+                <h1>Make Your Car Photos Stand Out</h1>
+                <p>Upload your car photos, and our AI will enhance them with stunning backgrounds, perfect lighting, and vibrant colors to attract buyers.</p>
+                <button class="cta-button">Get Started</button>
+            </div>
         </div>
     </header>
     <main>
+        <br>
+        <br>
+        <br>
         <section class="features">
             <div class="feature">
-                <img src="imgs/file.png" alt="Upload Image">
+                <img src="{{url_for('static', filename='imgs/file.png')}}" alt="Upload Image">
                 <h2>Simple Upload</h2>
                 <p>Upload your car photo effortlessly.</p>
             </div>
             <div class="feature">
-                <img src="imgs/artificial-intelligence.png" alt="AI Processing">
+                <img src="{{url_for('static', filename='imgs/artificial-intelligence.png')}}" alt="AI Processing">
                 <h2>AI Enhancements</h2>
                 <p>Our AI improves lighting, colors, and background for a professional look.</p>
             </div>
             <div class="feature">
-                <img src="imgs/download.png" alt="Download Results">
+                <img src="{{url_for('static', filename='imgs/download.png')}}" alt="Download Results">
                 <h2>Download in Seconds</h2>
                 <p>Get your enhanced car photo ready for sale instantly.</p>
             </div>

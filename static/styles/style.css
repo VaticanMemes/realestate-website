@@ -18,9 +18,7 @@ a {
 
 /* Header */
 .hero {
-    background-image: url('imgs/1720563998238.png'); /* Replace with a car-related hero image */
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,9 +50,29 @@ a {
     color: #ffcc00;
 }
 
-.hero-content {
+/* Hero Image and Content */
+.hero-image-container {
+    position: relative;
     text-align: center;
-    padding: 2rem;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
 }
 
 .hero-content h1 {
