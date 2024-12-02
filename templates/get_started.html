@@ -13,13 +13,18 @@
         <nav class="navbar">
             <a class="logo" href="{{  url_for('home')  }}">CarPicsByAI.net</a>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{  url_for('home')  }}">Home</a></li>
                 <li><a href="#">How It Works</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <form method='POST' enctype='multipart/form-data'>
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
     </main>
     <footer class="footer">
         <p>&copy; 2024 CarPicsByAI.net. All Rights Reserved.</p>

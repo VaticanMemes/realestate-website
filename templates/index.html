@@ -13,7 +13,7 @@
         <nav class="navbar">
             <a class="logo" href="{{  url_for('home')  }}">CarPicsByAI.net</a>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{  url_for('home')  }}">Home</a></li>
                 <li><a href="#">How It Works</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -28,9 +28,6 @@
         </div>
     </header>
     <main>
-        <br>
-        <br>
-        <br>
         <section class="features">
             <div class="feature">
                 <img src="{{url_for('static', filename='imgs/file.png')}}" alt="Upload Image">
